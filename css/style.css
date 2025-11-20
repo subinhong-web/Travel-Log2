@@ -68,7 +68,7 @@ body {
 
 /* main_section 시작 */
 .main_section {
-    background: url(../image/main_img.png);
+    background: url(../img/main_img.png);
     background-size: cover;
     height: 100vh;
     position: relative;
@@ -126,7 +126,7 @@ header {
 
 /* introduction 시작 */
 .introduction {
-    background: url(../image/introduction_img.png);
+    background: url(../img/introduction_img.png);
     background-size: cover;
     height: 100vh;
 }
@@ -168,7 +168,7 @@ header {
 
 /* visited_section 시작 */
 .visited_section {
-    background: url(../image/visited\ Places_img.png);
+    background: url(../img/visited\ Places_img.png);
     background-size: cover;
     height: 100vh;
 }
@@ -237,7 +237,7 @@ header {
 
 /* choosing_resort 시작 */
 .choosing_resort {
-    background: url(../image/Choosing\ a\ Resort_img.png);
+    background: url(../img/Choosing\ a\ Resort_img.png);
     background-size: cover;
     height: 100vh;
 }
@@ -331,7 +331,7 @@ header {
 
 /* moments 시작 */
 .moments {
-    background: url(../image/Moments_main.png);
+    background: url(../img/Moments_main.png);
     background-size: cover;
     height: 100vh;
 }
@@ -397,7 +397,7 @@ header {
 
 /* travel_companion 시작 */
 .travel_companion {
-    background: url(../image/Travel\ Companion_img.png);
+    background: url(../img/Travel\ Companion_img.png);
     background-size: cover;
     height: 100vh;
 }
@@ -520,7 +520,7 @@ header {
 
 /* q&a 시작 */
 .q_a {
-    background: url(../image/Q&A_img.png);
+    background: url(../img/Q&A_img.png);
     background-size: cover;
     height: 100vh;
     position: relative;
@@ -608,40 +608,14 @@ header {
 }
 
 /* liquidGlass 효과 시작 */
-.liquidGlass-wrapper {
-    position: relative;
-    display: flex;
-}
 
-.liquidGlass-effect {
-    position: absolute;
-    inset: 0;
-    backdrop-filter: blur(3px);
-    filter: url(#glass-distortion);
-}
-
-.liquidGlass-tint {
-    position: absolute;
-    background: rgba(255, 255, 255, 0.25);
-}
-
-.liquidGlass-shine {
-    position: absolute;
-    inset: 0;
-    z-index: 2;
-    box-shadow: inset 2px 2px 1px 0 rgba(255, 255, 255, 0.5),inset -1px -1px 1px 1px rgba(255, 255, 255, 0.5);
-}
-
-.liquidGlass-text {
-    z-index: 3;
-}
 /* glass 효과 끝 */
 /* q&a 끝 */
 
 
 /* common_sense 시작 */
 .common_sense {
-    background: url(../image/Common\ sense_main.png);
+    background: url(../img/Common\ sense_main.png);
     background-size: cover;
     height: 100vh;
     position: relative;
@@ -660,10 +634,6 @@ header {
 .common_sense_box_1 {
     display: flex;
     position: absolute;
-}
-
-.common_sense_box_1 > figure {
-    /* transform: translateX(-20%); */
 }
 
 .common_sense_box_1 > p {
@@ -706,7 +676,7 @@ header {
 
 /* review 시작 */
 .review {
-    background: url(../image/Review_img.png);
+    background: url(../img/Review_img.png);
     background-size: cover;
     height: 100vh;
 }
@@ -724,8 +694,6 @@ header {
 }
 
 .review_slide {
-    /* width: 700px; */
-    /* height: 500px; */
     background: rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(10px);
     border-radius: 25px;
