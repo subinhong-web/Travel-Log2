@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* LIQUID GLASS STYLES */
+
+        .bg {
+            background: rgba(0, 0, 0, 0.5);
+            width: 100%;
+        }
+
+        .liquidGlass-wrapper {
+            position: relative;
+            display: flex;
+        }
+
+        .liquidGlass-effect {
+            position: absolute;
+            inset: 0;
+            backdrop-filter: blur(3px);
+            filter: url(#glass-distortion);
+        }
+
+        .liquidGlass-tint {
+            position: absolute;
+            background: rgba(255, 255, 255, 0.25);
+        }
+
+        .liquidGlass-shine {
+            position: absolute;
+            inset: 0;
+            z-index: 2;
+            box-shadow: inset 2px 2px 1px 0 rgba(255, 255, 255, 0.5), inset -1px -1px 1px 1px rgba(255, 255, 255, 0.5);
+        }
+
+        .liquidGlass-text {
+            z-index: 3;
+            width: 500px;
+        }
+
+        /* 채팅컨테이너로 이릠 변경 */
+        body {
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            /* 배경변경 */
+            background: url("./image/Q&A_img.png") center center;
+            background-size: cover;
+            animation: moveBackground 60s linear infinite;
+        }
+
+
+        .menu>div>div:hover {
+            background-color: rgba(255, 255, 255, 0.5);
+            box-shadow: inset -2px -2px 2px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(2px);
+        }
+
+
+        @keyframes moveBackground {
+            from {
+                background-position: 0% 0%;
+            }
+
+            to {
+                background-position: 0% -500%;
+            }
+        }
+
+        .wrapper>div:nth-child(odd) {
+            transform: translateX(-500px);
+            padding: 50px 100px;
+        }
+
+        .wrapper>div:nth-child(even) {
+            transform: translateX(500px);
+            padding: 50px 100px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="bg">
+            <div class="liquidGlass-wrapper menu">
+                <div class="liquidGlass-effect"></div>
+                <div class="liquidGlass-tint"></div>
+                <div class="liquidGlass-shine"></div>
+                <div class="liquidGlass-text">
+                    <div>안녕하세요</div>
+                    <div>Open file</div>
+                    <div>Settings</div>
+                    <div>Repository</div>
+                </div>
+            </div>
+            <div class="liquidGlass-wrapper menu">
+                <div class="liquidGlass-effect"></div>
+                <div class="liquidGlass-tint"></div>
+                <div class="liquidGlass-shine"></div>
+                <div class="liquidGlass-text">
+                    <div>안녕하세요</div>
+                    <div>Open file</div>
+                    <div>Settings</div>
+                    <div>Repository</div>
+                </div>
+            </div>
+            <div class="liquidGlass-wrapper menu">
+                <div class="liquidGlass-effect"></div>
+                <div class="liquidGlass-tint"></div>
+                <div class="liquidGlass-shine"></div>
+                <div class="liquidGlass-text">
+                    <div>안녕하세요</div>
+                    <div>Open file</div>
+                    <div>Settings</div>
+                    <div>Repository</div>
+                </div>
+            </div>
+            <div class="liquidGlass-wrapper menu">
+                <div class="liquidGlass-effect"></div>
+                <div class="liquidGlass-tint"></div>
+                <div class="liquidGlass-shine"></div>
+                <div class="liquidGlass-text">
+                    <div>안녕하세요</div>
+                    <div>Open file</div>
+                    <div>Settings</div>
+                    <div>Repository</div>
+                </div>
+            </div>
+            <div class="liquidGlass-wrapper menu">
+                <div class="liquidGlass-effect"></div>
+                <div class="liquidGlass-tint"></div>
+                <div class="liquidGlass-shine"></div>
+                <div class="liquidGlass-text">
+                    <div>안녕하세요</div>
+                    <div>Open file</div>
+                    <div>Settings</div>
+                    <div>Repository</div>
+                </div>
+            </div>
+        </div>
+
+        <svg style="display: none">
+            <filter id="glass-distortion" x="0%" y="0%" width="100%" height="100%" filterUnits="objectBoundingBox">
+                <feTurbulence type="fractalNoise" baseFrequency="0.01 0.01" numOctaves="1" seed="5"
+                    result="turbulence" />
+                <!-- Seeds: 14, 17,  -->
+
+                <feComponentTransfer in="turbulence" result="mapped">
+                    <feFuncR type="gamma" amplitude="1" exponent="10" offset="0.5" />
+                    <feFuncG type="gamma" amplitude="0" exponent="1" offset="0" />
+                    <feFuncB type="gamma" amplitude="0" exponent="1" offset="0.5" />
+                </feComponentTransfer>
+
+                <feGaussianBlur in="turbulence" stdDeviation="3" result="softMap" />
+
+                <feSpecularLighting in="softMap" surfaceScale="5" specularConstant="1" specularExponent="100"
+                    lighting-color="white" result="specLight">
+                    <fePointLight x="-200" y="-200" z="300" />
+                </feSpecularLighting>
+
+                <feComposite in="specLight" operator="arithmetic" k1="0" k2="1" k3="1" k4="0" result="litImage" />
+
+                <feDisplacementMap in="SourceGraphic" in2="softMap" scale="150" xChannelSelector="R"
+                    yChannelSelector="G" />
+            </filter>
+        </svg>
+
+
+
+
+
+</body>
+
+</html>
