@@ -6,7 +6,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/glass.css">
+
+    <style>
+        .q_a {
+            position: relative;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            height: 100vh;
+            background: url("../img/Q&A_img.png");
+            background-size: cover;
+        }
+
+        .q_a_top_text {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 65px;
+            color: #fff;
+        }
+
+        .q_a_top_text>h2 {
+            font-size: 64px;
+        }
+
+        .q_a_top_text>p {
+            font-size: 32px;
+        }
+
+        .q_a_text_box {
+            width: 1070px;
+            height: 745px;
+            background: rgba(255, 255, 255, 0.3);
+            /* backdrop-filter: blur(10px); */
+            border: 1.5px solid#fff;
+            border-radius: 25px;
+            overflow: hidden;
+            overflow: scroll;
+        }
+
+        .question>.my_text>span,
+        .question>.other>span {
+            width: 610px;
+            height: 170px;
+            border-radius: 130px;
+            font-size: 24px;
+            line-height: 35px;
+            display: inline-block;
+        }
+    </style>
 </head>
 
 <body>
