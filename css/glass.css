@@ -17,11 +17,11 @@
     color: #fff;
 }
 
-.q_a_top_text>h2 {
+.q_a_top_text > h2 {
     font-size: 64px;
 }
 
-.q_a_top_text>p {
+.q_a_top_text > p {
     font-size: 32px;
 }
 
@@ -69,12 +69,12 @@
 }
 
 .liquidGlass-effect {
-    backdrop-filter: blur(4px);
+    backdrop-filter: blur(3px);
     filter: url(#glass-distortion);
 }
 
 .liquidGlass-tint {
-    background: rgba(255, 255, 255, 0.25);
+    background: rgba(255, 255, 255, 0.1);
 }
 
 .liquidGlass-shine {
@@ -98,6 +98,8 @@
 }
 
 /* glass 끝 */
+
+/* 텍스트 입력 박스 시작 */
 
 .q_a_input {
     width: 1150px;
@@ -127,3 +129,5 @@
     border: none;
     cursor: pointer;
 }
+
+/* 텍스트 입력 박스 끝 */

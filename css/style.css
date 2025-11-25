@@ -57,7 +57,8 @@ body {
 
 .side_text a {
     text-decoration: none;
-    color: #fff;
+    color: #C0D9E5;
+    /* 그냥 하얀색,,,아니면 하늘색,,, */
 }
 
 .side_text > li {
