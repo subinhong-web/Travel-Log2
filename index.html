@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/media.css">
+    <link rel="stylesheet" href="./css/glass.css">
 </head>
 
 <body>
@@ -302,93 +303,131 @@
         </div>
 
         <div class="q_a_text_box">
-            <div class="question">
-                <p class="liquidGlass-text">
-                    <span>
-                        Is it really hot here??? Is it dry heat??
-                        <br>
-                        Or is it humid heat???
-                    </span>
-                </p>
-                <p class="liquidGlass-text">
-                    <span>
-                        Since it's completely dry,
-                        <br>
-                        you should pack at least five bottles of mist.
-                    </span>
-                </p>
-                <p class="liquidGlass-text">
-                    <span>
-                        I want to go skydiving.
-                        <br>
-                        Is it possible to guarantee my life??
-                    </span>
-                </p>
-                <p class="liquidGlass-text">
-                    <span>
-                        You're responsible for your own life.
-                        <br>
-                        If you're scared, just don't do it.
-                    </span>
-                </p>
-                <p class="liquidGlass-text">
-                    <span>
-                        Recommend a great coffee spot, please.
-                        <br>
-                        Something without acidity.
-                        <br>
-                        Oh, with a seaside view.
-                    </span>
-                </p>
-                <p class="liquidGlass-text">
-                    <span>
-                        There's no coffee shop there,
-                        <br>
-                        but there's a gas station 5 km away—maybe
-                        <br>
-                        I could get some gasoline...?
-                    </span>
-                </p>
+            <div class="wrapper">
+                <div class="q_a_bg">
+                    <div class="liquidGlass-wrapper menu">
+                        <div class="liquidGlass-effect"></div>
+                        <div class="liquidGlass-tint"></div>
+                        <div class="liquidGlass-shine"></div>
+                        <div class="liquidGlass-text">
+                            <p class="liquidGlass-text">
+                                <span>
+                                    Is it really hot here??? Is it dry heat??
+                                    <br>
+                                    Or is it humid heat???
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="liquidGlass-wrapper menu">
+                        <div class="liquidGlass-effect"></div>
+                        <div class="liquidGlass-tint"></div>
+                        <div class="liquidGlass-shine"></div>
+                        <div class="liquidGlass-text">
+                            <p class="liquidGlass-text right">
+                                <span>
+                                    Since it's completely dry,
+                                    <br>
+                                    you should pack at least five bottles of mist.
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="liquidGlass-wrapper menu">
+                        <div class="liquidGlass-effect"></div>
+                        <div class="liquidGlass-tint"></div>
+                        <div class="liquidGlass-shine"></div>
+                        <div class="liquidGlass-text">
+                            <p class="liquidGlass-text">
+                                <span>
+                                    I want to go skydiving.
+                                    <br>
+                                    Is it possible to guarantee my life??
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="liquidGlass-wrapper menu">
+                        <div class="liquidGlass-effect"></div>
+                        <div class="liquidGlass-tint"></div>
+                        <div class="liquidGlass-shine"></div>
+                        <div class="liquidGlass-text">
+                            <p class="liquidGlass-text right">
+                                <span>
+                                    You're responsible for your own life.
+                                    <br>
+                                    If you're scared, just don't do it.
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="liquidGlass-wrapper menu">
+                        <div class="liquidGlass-effect"></div>
+                        <div class="liquidGlass-tint"></div>
+                        <div class="liquidGlass-shine"></div>
+                        <div class="liquidGlass-text">
+                            <p class="liquidGlass-text">
+                                <span>
+                                    Recommend a great coffee spot, please.
+                                    <br>
+                                    Something without acidity.
+                                    <br>
+                                    Oh, with a seaside view.
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="liquidGlass-wrapper menu">
+                        <div class="liquidGlass-effect"></div>
+                        <div class="liquidGlass-tint"></div>
+                        <div class="liquidGlass-shine"></div>
+                        <div class="liquidGlass-text">
+                            <p class="liquidGlass-text right">
+                                <span>
+                                    There's no coffee shop there,
+                                    <br>
+                                    but there's a gas station 5 km away—maybe
+                                    <br>
+                                    I could get some gasoline...?
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        </div>
+
+        <svg style="display: none">
+            <filter id="glass-distortion" x="0%" y="0%" width="100%" height="100%" filterUnits="objectBoundingBox">
+                <feTurbulence type="fractalNoise" baseFrequency="0.01 0.01" numOctaves="1" seed="5"
+                    result="turbulence" />
+                <!-- Seeds: 14, 17,  -->
+
+                <feComponentTransfer in="turbulence" result="mapped">
+                    <feFuncR type="gamma" amplitude="1" exponent="10" offset="0.5" />
+                    <feFuncG type="gamma" amplitude="0" exponent="1" offset="0" />
+                    <feFuncB type="gamma" amplitude="0" exponent="1" offset="0.5" />
+                </feComponentTransfer>
+
+                <feGaussianBlur in="turbulence" stdDeviation="3" result="softMap" />
+
+                <feSpecularLighting in="softMap" surfaceScale="5" specularConstant="1" specularExponent="100"
+                    lighting-color="white" result="specLight">
+                    <fePointLight x="-200" y="-200" z="300" />
+                </feSpecularLighting>
+
+                <feComposite in="specLight" operator="arithmetic" k1="0" k2="1" k3="1" k4="0" result="litImage" />
+
+                <feDisplacementMap in="SourceGraphic" in2="softMap" scale="150" xChannelSelector="R"
+                    yChannelSelector="G" />
+            </filter>
+        </svg>
+
         <div class="q_a_input">
             <input type="text" placeholder="Text input">
             <button>
                 <img src="./img/send.png" alt="send">
             </button>
-        </div>
-
-    </section>
-
-    <section class="common_sense">
-        <h2>
-            COMMON SENSE
-        </h2>
-        <div class="common_sense_box_1">
-            <figure>
-                <img src="./img/Common sense_1.png" alt="">
-            </figure>
-            <p>
-                Statue donated by France
-                <br>
-                to commemorate the 100th anniversary
-                <br>
-                of American independence
-            </p>
-        </div>
-
-        <div class="common_sense_box_2">
-            <p>
-                The massive iron tower constructed
-                <br>
-                under the leadership of
-                <br>
-                French architect Alexandre Gustave Eiffel
-            </p>
-            <figure>
-                <img src="./img/Common sense_2.png" alt="">
-            </figure>
         </div>
 
     </section>
