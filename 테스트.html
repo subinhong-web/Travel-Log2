@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .map_section {
+            display: flex;
+            background: #285e49;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            gap: 60px;
+            color: #fff;
+        }
+
+        .left>p {
+            font-size: 24px;
+        }
+
+        .left>h1 {
+            font-size: 60px;
+            margin: 0;
+        }
+
+        .right {
+            width: 300px;
+        }
+
+        .right>h2 {
+            font-size: 32px;
+            margin: 0;
+        }
+
+        .search_icon,
+        svg {
+            width: 40px;
+            height: 40px;
+        }
+
+        .input,
+        .search_icon {
+            margin: 0;
+            padding: 0;
+            border: none;
+            background: none;
+            outline: none;
+            color: #fff;
+            font-size: 20px;
+        }
+
+        .input_box {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border: 1px solid #fff;
+            padding: 4px 16px;
+            width: 100%;
+            margin-top: 32px;
+            border-radius: 8px;
+        }
+
+        .map {
+            border-radius: 16px;
+        }
+
+        .input::placeholder {
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="map_section">
+        <div class="left">
+            <p>
+                커피한잔 하실?
+            </p>
+            <h1>
+                STARBUCKS Place
+            </h1>
+            <iframe class="map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3169.621487404309!2d126.72438609760385!3d37.39878280456648!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b7a6e2e5dceb9%3A0xa6eb70e2968250c5!2z7Iqk7YOA67KF7IqkIOyduOyynOuFvO2YhOygkA!5e0!3m2!1sko!2skr!4v1748225347418!5m2!1sko!2skr"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <div class="right">
+            <h2>
+                지점찾기
+            </h2>
+            <div class="input_box">
+                <input id="input_text" class="input" type="text" placeholder="지역을 입력하세요.">
+                <button class="search_icon">
+                    <!-- disabled : 비활성화 -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path
+                            d="M9.5 3C11.2239 3 12.8772 3.68482 14.0962 4.90381C15.3152 6.12279 16 7.77609 16 9.5C16 11.11 15.41 12.59 14.44 13.73L14.71 14H15.5L20.5 19L19 20.5L14 15.5V14.71L13.73 14.44C12.5504 15.4465 11.0506 15.9996 9.5 16C7.77609 16 6.12279 15.3152 4.90381 14.0962C3.68482 12.8772 3 11.2239 3 9.5C3 7.77609 3.68482 6.12279 4.90381 4.90381C6.12279 3.68482 7.77609 3 9.5 3ZM9.5 5C7 5 5 7 5 9.5C5 12 7 14 9.5 14C12 14 14 12 14 9.5C14 7 12 5 9.5 5Z"
+                            fill="black" />
+                    </svg>
+                    <!-- img의 alt 태그 쓰는 이유? -->
+                    <!-- 접근성을 높이는 방법이다. -->
+                    <!-- 접근성? 시각 장애인 또는 고령층 등 모든 사람이 웹을 사용하는데 불편함이 없도록 웹을 설계하는 것을 말한다. -->
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // input_text 가져오기
+        // search_icon 가져오기
+        // search_icon을 비활성화 해놓기. disabled 속성을 활용.
+        // 시각적으로 비활성화된 것이 보이게 search_icon의 스타일을 opacity 0.5로 변경해줌.
+
+        const inputText = document.getElementById("input_text");
+        const btn = document.querySelector(".search_icon");
+
+        btn.disabled = true;
+        // 처음엔 비활성화. disabled 비활성화 속성을 true로 작동시키겠다는 뜻.
+        // disabled : 따로 만든 변수가 아니고 html요소의 속성( button / input 등 )에 기본적으로 존재하는 속성이다.
+        btn.style.opacity = 0.3; // 시각적으로 비활성화 된 것 처럼 보임.
+        inputText.addEventListener("input", () => {
+            // addEventListener("input") : 글자를 입력 / 글자를 지우거나 복사하거나 붙여넣기 하거나 자동완성 하거나 등등 input 값에 변화된 이벤트가 감지되면 실행하겠다는 뜻.
+            if (inputText.value.trim() !== "") {
+                // input에 어떤 값이 들어와야 작동함.
+                // trim : " " <= 눈에 보이지 않지만 공백이 존재하기 때문에 값은 있기 때문에 입력한 문자의 공백을 제거한다.
+                // trim : 입력한 문자의 공백을 제거 "     강남    " => "강남"
+                // 즉 정말 텍스트가 존재하는지 확인하는 메서드.
+                // inputText.value : 사용자가 입력한 값.
+                // 사용자가 입력한 값이 ""과 달라서 비어있지 않다면 아래 코드를 실행해라.
+                btn.disabled = false; // input에 어떤 값이 들어왔다면 disabled을 끈다.
+                btn.style.opacity = 1;
+            } else {
+                // 사용자가 입력한 값이 빈값이라면 
+                btn.disabled = true; // 그대로 비활성화 유지
+                btn.style.opacity = 0.3; // 그대로 비활성화 유지
+            }
+        });
+
+        // 언제 검색이 되어야 할까?
+        // 검색버튼을 클릭했을 때 사용자가 inputText에 입력한 value값이 비어있지 않다면 input실행!
+        btn.addEventListener("click", () => {
+            if (inputText.value.trim() !== "") {
+                input();
+            }
+        });
+
+        window.addEventListener("keyup", (e) => {
+            // keyup 은 키보드를 눌렀다가 뗐을 때 작동하기 때문에 e값을 받아온다고 써주어야함.
+            if (e.key === "Enter" && document.activeElement === inputText && inputText.value.trim() !== "") {
+                input();
+                // e.key === "Enter" : 이벤트가 발생한 키가 Enter이고,
+                // activeElement : 현재 사용자가 클릭을 했거나 키보드 커서가 깜빡이는 HTML요소를 가리킨다.
+            }
+        });
+
+
+        function input() {
+            const query = encodeURIComponent("스타벅스 " + inputText.value.trim());
+            // encodeURIComponent : 주소창에 특수문자나 한글을 그대로 입력할 수 없기 때문에 웹 주소에 맞게 인코딩 해주는 메서드.
+            // 즉 스타벅스 제주 -> %EC%8A%A4%ED%83%80%EB%B2%85%EC%8A%A4+%EC%A0%9C%EC%A3%BC
+
+            window.open("https://www.google.com/maps/search/" + query + "/data=!3m1!4b1");
+        };
+
+
+    </script>
+</body>
+
+</html>
