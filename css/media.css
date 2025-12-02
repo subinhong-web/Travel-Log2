@@ -1,0 +1,77 @@
+@media (max-width: 1024px) {
+    .body {
+        overflow-x: hidden;
+    }
+
+    /* 슬라이드 메뉴 시작 */
+    .side_menu {
+        position: relative;
+    }
+    
+    .side_text {
+        position: fixed;
+        z-index: 1;
+        right: 53%;
+        top: 25%;
+    }
+    
+    .side_text a {
+        text-decoration: none;
+        color: #C0D9E5;
+        font-family: 'ChosunIlboMyungjo';
+    }
+
+    .side_text > li {
+        text-align: end;
+        margin: 16px 0;
+        font-size: 18px;
+    }
+    /* 슬라이드 메뉴 끝 */
+
+    /* 메인 메뉴 시작 */
+    .main_text {
+        font-size: 48px;
+        color: #fff;
+        margin: 260px 0 0 100px;
+    }
+
+    .main_section > button {
+        width: 145px;
+        height: 60px;
+    }
+    /* 메인 메뉴 끝 */
+
+    /* introduction 시작 */
+    .introduction_top_text > h2 {
+        font-size: 68px;
+        font-family: "Nanum Myeongjo", serif;
+        font-weight: 700;
+        display: flex;
+        justify-content: center;
+        padding: 30px 0 0 0;
+    }
+
+    .introduction_top_text > p {
+        font-size: 32px;
+        font-family: 'ChosunIlboMyungjo';
+        display: flex;
+        justify-content: end;
+        margin-right: 1%;
+    }
+
+    .introduction_main_text {
+        color: #fff;
+        font-size: 36px;
+        line-height: 65px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-family: 'ChosunIlboMyungjo';
+        margin-top: 110px;
+    }
+    /* introduction 끝 */
+
+    /* visited_section 시작 */
+    
+    /* visited_section 끝 */
+}

@@ -165,7 +165,7 @@ header {
 
 .introduction_top_text > p {
     font-size: 32px;
-    font-family: "Nanum Myeongjo", serif;
+    font-family: 'ChosunIlboMyungjo';
     font-weight: 700;
     display: flex;
     justify-content: end;
@@ -179,7 +179,7 @@ header {
     display: flex;
     justify-content: center;
     text-align: center;
-    font-family: "Nanum Myeongjo", serif;
+    font-family: 'ChosunIlboMyungjo';
     font-weight: 800;
     margin-top: 145px;
 }
@@ -191,6 +191,7 @@ header {
     background-size: cover;
     height: 100vh;
 }
+
 iframe {
     width: 570px;
     height: 700px;
@@ -204,15 +205,15 @@ iframe {
 
 .visited_text > h2 {
     font-size: 40px;
-    font-family: "Nanum Myeongjo", serif;
+    font-family: 'ChosunIlboMyungjo';
     font-weight: 800;
     padding: 30px 0 0 0;
 }
 
 .visited_text > p {
     font-size: 24px;
-    font-family: "Nanum Myeongjo", serif;
-    font-weight: 700;
+    font-family: 'ChosunIlboMyungjo';
+    /* font-weight: 600; */
     margin-top: 15px;
 }
 
@@ -269,11 +270,15 @@ iframe {
 .choosing_resort_text {
     text-align: end;
     padding: 70px 240px 0px 0px;
+    font-family: 'ChosunIlboMyungjo';
+    font-weight: 900;
 }
 
 .choosing_resort_text > h2 {
     font-size: 40px;
     margin-bottom: 15px;
+    font-family: 'ChosunIlboMyungjo';
+    font-weight: 600;
 }
 
 .choosing_resort_text > p {
@@ -329,12 +334,16 @@ iframe {
 
 .choosing_resort_text_box > h3 {
     font-size: 40px;
+    font-family: 'MapoFlowerIsland';
+    font-weight: 800;
     margin-left: 50px;
     margin-top: 40px;
 }
 
 .choosing_resort_text_box > p {
     font-size: 24px;
+    font-family: 'MapoFlowerIsland';
+    font-weight: 600;
     line-height: 35px;
     margin-left: 50px;
     margin-top: 40px;
@@ -363,11 +372,15 @@ iframe {
 
 .moments_text > h2 {
     font-size: 48px;
+    font-family: 'ChosunIlboMyungjo';
+    font-weight: 800;
 }
 
 .moments_text > p {
     font-size: 32px;
     margin: 15px 0 30px 0;
+    font-family: 'ChosunIlboMyungjo';
+    /* font-weight: 800; */
 }
 
 .moments_1 {
@@ -431,6 +444,8 @@ iframe {
 
 .travel_companion_text_box > h2 {
     font-size: 36px;
+    font-family: 'ChosunIlboMyungjo';
+    font-weight: 800;
     color: #fff;
 }
 
@@ -455,6 +470,8 @@ iframe {
 
 .travel_companion_text > p {
     font-size: 20px;
+    font-family: 'ChosunIlboMyungjo';
+    /* font-weight: 800; */
     color: #fff;
     margin: 10px 130px;
 }
@@ -564,10 +581,14 @@ iframe {
 
 .q_a_top_text > h2 {
     font-size: 64px;
+    font-family: 'ChosunIlboMyungjo';
+    font-weight: 800;
 }
 
 .q_a_top_text > p {
     font-size: 32px;
+    font-family: 'ChosunIlboMyungjo';
+    /* font-weight: 800; */
 }
 
 .q_a_text_box {
@@ -718,12 +739,14 @@ iframe {
 
 .review_text_box > h2 {
     font-size: 64px;
+    font-family: 'ChosunIlboMyungjo';
     color: #000000;
     margin-left: 100px;
 }
 
 .review_text_box > p {
     font-size: 24px;
+    font-family: 'ChosunIlboMyungjo';
 }
 
 .review_box {
@@ -743,7 +766,7 @@ iframe {
 .review_box_text {
     margin-top: 40px;
     width: 490px;
-    height: 175px;
+    height: 185px;
     background: rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(10px);
     border-radius: 25px;
