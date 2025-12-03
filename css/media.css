@@ -1,77 +1,438 @@
+img,
+iframe,
+video,
+picture {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+html,
+body {
+    overflow-x: hidden;
+}
+
 @media (max-width: 1024px) {
-    .body {
-        overflow-x: hidden;
-    }
-
-    /* 슬라이드 메뉴 시작 */
-    .side_menu {
-        position: relative;
-    }
-    
-    .side_text {
-        position: fixed;
-        z-index: 1;
-        right: 53%;
-        top: 25%;
-    }
-    
-    .side_text a {
-        text-decoration: none;
-        color: #C0D9E5;
-        font-family: 'ChosunIlboMyungjo';
-    }
-
-    .side_text > li {
-        text-align: end;
-        margin: 16px 0;
-        font-size: 18px;
-    }
-    /* 슬라이드 메뉴 끝 */
-
-    /* 메인 메뉴 시작 */
     .main_text {
-        font-size: 48px;
-        color: #fff;
-        margin: 260px 0 0 100px;
+        font-size: 42px;
+        margin-top: 180px;
     }
 
     .main_section > button {
         width: 145px;
-        height: 60px;
-    }
-    /* 메인 메뉴 끝 */
-
-    /* introduction 시작 */
-    .introduction_top_text > h2 {
-        font-size: 68px;
-        font-family: "Nanum Myeongjo", serif;
-        font-weight: 700;
-        display: flex;
-        justify-content: center;
-        padding: 30px 0 0 0;
-    }
-
-    .introduction_top_text > p {
-        font-size: 32px;
-        font-family: 'ChosunIlboMyungjo';
-        display: flex;
-        justify-content: end;
-        margin-right: 1%;
+        height: 70px;
+        bottom: 80px;
     }
 
     .introduction_main_text {
-        color: #fff;
-        font-size: 36px;
-        line-height: 65px;
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        font-family: 'ChosunIlboMyungjo';
-        margin-top: 110px;
+        font-size: 26px;
+        line-height: 48px;
+        margin-top: 100px;
+        padding: 0 20px;
     }
-    /* introduction 끝 */
 
-    /* visited_section 시작 */
-    
-    /* visited_section 끝 */
+    .q_a_text_box {
+        width: 92%;
+        max-width: 920px;
+        height: 520px;
+        padding: 30px;
+    }
+
+    .liquidGlass-wrapper {
+        max-width: 580px;
+        padding: 20px 28px;
+    }
+
+    .liquidGlass-text {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    .q_a_input {
+        width: 92%;
+        max-width: 920px;
+        height: 48px;
+        padding: 8px;
+    }
+
+    .q_a_input > input {
+        width: calc(100% - 56px);
+        /* 부모의 전체 너비(100%)에서 56px을 뺀 값만큼 이 요소의 가로 폭을 설정 블로그 참고 */
+    }
+
+    .review_slide {
+        width: calc(100% - 20px);
+        /* 부모의 전체 너비(100%)에서 20px을 뺀 값만큼 이 요소의 가로 폭을 설정 블로그 참고 */
+    }
+}
+
+
+@media (max-width: 900px) {
+    .introduction_top_text > p {
+        font-size: 22px;
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .visited_text {
+        margin: 0 0 10px 0;
+        text-align: center;
+    }
+
+    .visited_text > h2 {
+        font-size: 30px;
+    }
+
+    .visited_text > p {
+        font-size: 16px;
+    }
+
+    .choosing_resort_text {
+        text-align: center;
+        padding: 40px 20px 0 20px;
+    }
+
+    .choosing_resort_button {
+        gap: 12px;
+    }
+
+    .ticket_box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .choosing_resort_text_box {
+        width: 95%;
+        padding: 12px;
+    }
+
+    .moments_1 > figure img,
+    .moments_2 > figure img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+@media (max-width: 780px) {
+
+    header img {
+        max-width: 140px;
+    }
+
+    .main_text {
+        font-size: 32px;
+        margin: 120px 0 0 18px;
+    }
+
+    .main_section {
+        height: auto;
+        padding-bottom: 60px;
+    }
+
+    .main_section > button {
+        width: 120px;
+        height: 56px;
+        bottom: 60px;
+    }
+
+    .introduction_top_text > h2 {
+        font-size: 44px;
+    }
+
+    .introduction_main_text {
+        font-size: 20px;
+        line-height: 34px;
+        margin-top: 60px;
+        padding: 0 16px;
+    }
+
+    .visited_box {
+        padding: 16px;
+        gap: 12px;
+        border-radius: 16px;
+    }
+
+    iframe {
+        height: 300px;
+    }
+
+    .visited_box_text > h2 {
+        font-size: 28px;
+    }
+
+    .visited_box_text > p {
+        font-size: 15px;
+        line-height: 1.5;
+        margin-top: 18px;
+    }
+
+    .visited_box_shaer > button {
+        width: 100%;
+        height: 48px;
+        font-size: 18px;
+        margin-top: 18px;
+    }
+
+    .resort_button,
+    .resort_button_2 {
+        width: 150px;
+        height: 50px;
+        font-size: 18px;
+    }
+
+    .moments_1 > p,
+    .moments_2 > p {
+        width: 92%;
+        font-size: 18px;
+        height: auto;
+        padding: 16px;
+        line-height: 1.4;
+        border-radius: 90px;
+    }
+
+    .travel_companion_text_box {
+        margin: 20px 16px;
+        padding-top: 30px;
+    }
+
+    .travel_companion_text_box > button {
+        margin-left: 12px;
+        padding: 12px;
+        font-size: 16px;
+        width: 150px;
+    }
+
+    .travel_companion_box_1,
+    .travel_companion_box_2 {
+        width: 95%;
+        padding: 18px;
+        height: auto;
+    }
+
+    .companion_user_img {
+        width: 100%;
+        max-width: 360px;
+        height: auto;
+    }
+
+    .travel_companion_box_1 > button,
+    .travel_companion_box_2 > button {
+        width: 220px;
+        height: 48px;
+        font-size: 16px;
+    }
+
+    .q_a_top_text {
+        gap: 18px;
+        flex-direction: column;
+        margin-bottom: 18px;
+    }
+
+    .q_a_top_text > h2 {
+        font-size: 36px;
+    }
+
+    .q_a_top_text > p {
+        font-size: 18px;
+    }
+
+    .q_a_text_box {
+        width: 95%;
+        max-width: 720px;
+        height: 420px;
+        padding: 18px;
+    }
+
+    .liquidGlass-wrapper {
+        width: 100%;
+        padding: 18px;
+        border-radius: 18px;
+        margin: 16px 0;
+    }
+
+    .liquidGlass-text {
+        font-size: 15px;
+        line-height: 22px;
+    }
+
+    .q_a_input {
+        width: 95%;
+        max-width: 720px;
+        height: auto;
+        padding: 10px;
+        flex-direction: row;
+        gap: 8px;
+    }
+
+    .q_a_input > input {
+        width: calc(100% - 56px);
+    }
+    /* 부모의 전체 너비(100%)에서 56px을 뺀 값만큼 이 요소의 가로 폭을 설정 블로그 참고 */
+}
+
+
+@media (max-width: 580px) {
+    .main_text {
+        font-size: 26px;
+        margin-top: 100px;
+    }
+
+    .introduction_top_text > h2 {
+        font-size: 34px;
+    }
+
+    .introduction_main_text {
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    .visited_box {
+        width: 94%;
+        padding: 12px;
+    }
+
+    iframe {
+        height: 260px;
+    }
+
+    .visited_box_text > h2 {
+        font-size: 24px;
+    }
+
+    .visited_box_text > p {
+        font-size: 14px;
+    }
+
+    .visited_box_shaer > button {
+        font-size: 16px;
+        height: 44px;
+    }
+
+    .choosing_resort_text_box > h3 {
+        font-size: 28px;
+        margin-left: 18px;
+    }
+
+    .choosing_resort_text_box > p {
+        font-size: 16px;
+        margin-left: 18px;
+        line-height: 24px;
+    }
+
+    .moments_1,
+    .moments_2 {
+        gap: 12px;
+    }
+
+    .moments_1 > p,
+    .moments_2 > p {
+        font-size: 16px;
+        width: 96%;
+    }
+
+    .travel_companion_text > p {
+        margin: 8px 16px;
+        font-size: 15px;
+    }
+
+    .companion_text_box {
+        width: 100%;
+        height: auto;
+        padding: 12px;
+    }
+
+    .companion_text_box_2 {
+        gap: 12px;
+        font-size: 16px;
+    }
+
+    .review_slide {
+        width: 100%;
+        padding: 16px;
+    }
+
+    .review_box_text {
+        width: 100%;
+        height: auto;
+        padding: 12px;
+        margin-top: 14px;
+    }
+}
+
+
+@media (max-width: 420px) {
+    header img {
+        max-width: 120px;
+    }
+
+    .main_text {
+        font-size: 22px;
+        margin-top: 80px;
+    }
+
+    .introduction_top_text > p {
+        font-size: 14px;
+    }
+
+    .visited_box {
+        padding: 10px;
+        border-radius: 12px;
+    }
+
+    iframe {
+        height: 220px;
+    }
+
+    .visited_box_text > h2 {
+        font-size: 20px;
+    }
+
+    .visited_box_text > p {
+        font-size: 13px;
+    }
+
+    .resort_button,
+    .resort_button_2 {
+        width: 100%;
+        height: 44px;
+        font-size: 16px;
+    }
+
+    .liquidGlass-text {
+        font-size: 13px;
+        line-height: 20px;
+    }
+
+    .liquidGlass-wrapper {
+        padding: 12px 14px;
+        border-radius: 14px;
+    }
+
+    .q_a_text_box {
+        height: 320px;
+        padding: 12px;
+    }
+
+    .q_a_input {
+        flex-direction: column;
+        gap: 8px;
+        height: auto;
+    }
+
+    .q_a_input > input {
+        width: 100%;
+    }
+
+    .review_text_box {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .review_text_box > h2 {
+        font-size: 28px;
+        margin-left: 10px;
+    }
 }
