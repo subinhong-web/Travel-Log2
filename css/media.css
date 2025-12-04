@@ -12,6 +12,21 @@ body {
     overflow-x: hidden;
 }
 
+/* choosing_resort 1700에서부터 컨텐츠 작아지기 */
+/* 그 외 컨텐츠들 1400에서부터 작아지기 */
+
+@media (max-width: 1700px) {
+    .choosing_resort_text_2 {
+        width: 1100px;
+        height: 80px;
+    }
+
+}
+
+@media (max-width: 1400px) {
+
+}
+
 @media (max-width: 1024px) {
     .main_text {
         font-size: 42px;
@@ -23,12 +38,23 @@ body {
         height: 70px;
         bottom: 80px;
     }
+    
+    .introduction_top_text > p {
+        font-size: 24px;
+        justify-content: end;
+        margin-right: 55px;
+    }
 
     .introduction_main_text {
         font-size: 26px;
-        line-height: 48px;
+        line-height: 68px;
         margin-top: 100px;
         padding: 0 20px;
+    }
+
+    .visited_text > h2 {
+        font-size: 32px;
+        margin: 0 0 0 -215px;
     }
 
     .q_a_text_box {
@@ -57,12 +83,10 @@ body {
 
     .q_a_input > input {
         width: calc(100% - 56px);
-        /* 부모의 전체 너비(100%)에서 56px을 뺀 값만큼 이 요소의 가로 폭을 설정 블로그 참고 */
     }
 
     .review_slide {
         width: calc(100% - 20px);
-        /* 부모의 전체 너비(100%)에서 20px을 뺀 값만큼 이 요소의 가로 폭을 설정 블로그 참고 */
     }
 }
 
@@ -270,7 +294,6 @@ body {
     .q_a_input > input {
         width: calc(100% - 56px);
     }
-    /* 부모의 전체 너비(100%)에서 56px을 뺀 값만큼 이 요소의 가로 폭을 설정 블로그 참고 */
 }
 
 

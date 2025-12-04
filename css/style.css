@@ -129,6 +129,8 @@ header {
 
 .main_section > button > img {
     animation: main_downicon 2s infinite;
+    display: block;
+    margin: 0 auto;
 }
 
 @keyframes main_downicon {
@@ -168,8 +170,7 @@ header {
     font-family: 'ChosunIlboMyungjo';
     font-weight: 700;
     display: flex;
-    justify-content: end;
-    margin-right: 330px;
+    margin: 0 auto;
 }
 
 .introduction_main_text {
@@ -203,6 +204,11 @@ iframe {
     margin: 0 0 0 270px;
 }
 
+.visited_text {
+    width: 1200px;
+    margin: 0 auto;
+}
+
 .visited_text > h2 {
     font-size: 40px;
     font-family: 'ChosunIlboMyungjo';
@@ -213,7 +219,6 @@ iframe {
 .visited_text > p {
     font-size: 24px;
     font-family: 'ChosunIlboMyungjo';
-    /* font-weight: 600; */
     margin-top: 15px;
 }
 
@@ -221,7 +226,7 @@ iframe {
     border: 1.5px solid #8F8F8F;
     border-radius: 20px;
     width: 1300px;
-    height: 695px;
+    height: 650px;
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(8px);
     display: flex;
@@ -229,20 +234,22 @@ iframe {
     padding: 16px;
     gap: 66px;
     transform: translateX(20%);
-    margin: 30px 0;
-    padding: 30px 0;
+}
+
+.visited_box_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .visited_box_text > h2 {
     font-size: 40px;
     color: #fff;
-    margin-top: 15px;
 }
 
 .visited_box_text > p {
     font-size: 20px;
     color: #fff;
-    margin-top: 40px;
     line-height: 26px;
 }
 
@@ -253,7 +260,6 @@ iframe {
     color: #fff;
     border-radius: 50px;
     border: 0.5px solid #8F8F8F;
-    margin-top: 100px;
     background: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(10px);
     cursor: pointer;
@@ -740,13 +746,14 @@ iframe {
 .review_text_box > h2 {
     font-size: 64px;
     font-family: 'ChosunIlboMyungjo';
-    color: #000000;
+    color: #ffffff;
     margin-left: 100px;
 }
 
 .review_text_box > p {
     font-size: 24px;
     font-family: 'ChosunIlboMyungjo';
+    color: #ffffff;
 }
 
 .review_box {
