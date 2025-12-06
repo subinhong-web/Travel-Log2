@@ -24,7 +24,91 @@ body {
 }
 
 @media (max-width: 1400px) {
+    /* 매 페이지에 붙어있는 side_menu 시작 */
 
+    .side_menu {
+        position: relative;
+    }
+
+    .side_text {
+        position: fixed;
+        z-index: 1;
+        right: 40px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .side_text>li {
+        text-align: end;
+        margin: 20px 0;
+    }
+
+    /* 매 페이지에 붙어있는 side_menu 끝 */
+
+    /* 메인 페이지 시작 */
+
+    .main_section>header h1 {
+        width: 180px;
+        height: 63px;
+    }
+
+    .main_text {
+        font-size: 42px;
+        margin-top: 180px;
+    }
+
+    .main_section>button {
+        width: 150px;
+        height: 60px;
+    }
+
+    /* 메인 페이지 끝 */
+
+    /* introduction 시작 */
+
+    .introduction_top_text > h2 {
+        font-size: 80px;
+    }
+
+    .introduction_top_text > p {
+        font-size: 26px;
+        text-align: center;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    /* introduction 끝 */
+
+    /* visited_section 시작 */
+
+    .visited_section > .visited_text {
+        margin: 0 0 20px 210px;
+    }
+
+    .visited_text > h2 {
+        font-size: 32px;
+        padding: 20px 0 0 0;
+    }
+
+    .visited_text > p {
+        font-size: 20px;
+        margin-top: 10px;
+    }
+
+    .visited_box {
+        width: 1000px;
+        height: 600px;  
+    }
+    /* visited_section 끝 */
+
+    /* choosing_resort 시작 */
+
+    /* choosing_resort 끝 */
+
+    /* moments 시작 */
+
+    
+    /* moments 끝 */
 }
 
 @media (max-width: 1024px) {
@@ -33,13 +117,13 @@ body {
         margin-top: 180px;
     }
 
-    .main_section > button {
+    .main_section>button {
         width: 145px;
         height: 70px;
         bottom: 80px;
     }
-    
-    .introduction_top_text > p {
+
+    .introduction_top_text>p {
         font-size: 24px;
         justify-content: end;
         margin-right: 55px;
@@ -52,7 +136,7 @@ body {
         padding: 0 20px;
     }
 
-    .visited_text > h2 {
+    .visited_text>h2 {
         font-size: 32px;
         margin: 0 0 0 -215px;
     }
@@ -81,7 +165,7 @@ body {
         padding: 8px;
     }
 
-    .q_a_input > input {
+    .q_a_input>input {
         width: calc(100% - 56px);
     }
 
@@ -92,7 +176,7 @@ body {
 
 
 @media (max-width: 900px) {
-    .introduction_top_text > p {
+    .introduction_top_text>p {
         font-size: 22px;
         margin-right: 0;
         text-align: center;
@@ -103,11 +187,11 @@ body {
         text-align: center;
     }
 
-    .visited_text > h2 {
+    .visited_text>h2 {
         font-size: 30px;
     }
 
-    .visited_text > p {
+    .visited_text>p {
         font-size: 16px;
     }
 
@@ -132,8 +216,8 @@ body {
         padding: 12px;
     }
 
-    .moments_1 > figure img,
-    .moments_2 > figure img {
+    .moments_1>figure img,
+    .moments_2>figure img {
         width: 100%;
         height: auto;
     }
@@ -156,13 +240,13 @@ body {
         padding-bottom: 60px;
     }
 
-    .main_section > button {
+    .main_section>button {
         width: 120px;
         height: 56px;
         bottom: 60px;
     }
 
-    .introduction_top_text > h2 {
+    .introduction_top_text>h2 {
         font-size: 44px;
     }
 
@@ -183,17 +267,17 @@ body {
         height: 300px;
     }
 
-    .visited_box_text > h2 {
+    .visited_box_text>h2 {
         font-size: 28px;
     }
 
-    .visited_box_text > p {
+    .visited_box_text>p {
         font-size: 15px;
         line-height: 1.5;
         margin-top: 18px;
     }
 
-    .visited_box_shaer > button {
+    .visited_box_shaer>button {
         width: 100%;
         height: 48px;
         font-size: 18px;
@@ -207,8 +291,8 @@ body {
         font-size: 18px;
     }
 
-    .moments_1 > p,
-    .moments_2 > p {
+    .moments_1>p,
+    .moments_2>p {
         width: 92%;
         font-size: 18px;
         height: auto;
@@ -222,7 +306,7 @@ body {
         padding-top: 30px;
     }
 
-    .travel_companion_text_box > button {
+    .travel_companion_text_box>button {
         margin-left: 12px;
         padding: 12px;
         font-size: 16px;
@@ -242,8 +326,8 @@ body {
         height: auto;
     }
 
-    .travel_companion_box_1 > button,
-    .travel_companion_box_2 > button {
+    .travel_companion_box_1>button,
+    .travel_companion_box_2>button {
         width: 220px;
         height: 48px;
         font-size: 16px;
@@ -255,11 +339,11 @@ body {
         margin-bottom: 18px;
     }
 
-    .q_a_top_text > h2 {
+    .q_a_top_text>h2 {
         font-size: 36px;
     }
 
-    .q_a_top_text > p {
+    .q_a_top_text>p {
         font-size: 18px;
     }
 
@@ -291,7 +375,7 @@ body {
         gap: 8px;
     }
 
-    .q_a_input > input {
+    .q_a_input>input {
         width: calc(100% - 56px);
     }
 }
@@ -303,7 +387,7 @@ body {
         margin-top: 100px;
     }
 
-    .introduction_top_text > h2 {
+    .introduction_top_text>h2 {
         font-size: 34px;
     }
 
@@ -321,25 +405,25 @@ body {
         height: 260px;
     }
 
-    .visited_box_text > h2 {
+    .visited_box_text>h2 {
         font-size: 24px;
     }
 
-    .visited_box_text > p {
+    .visited_box_text>p {
         font-size: 14px;
     }
 
-    .visited_box_shaer > button {
+    .visited_box_shaer>button {
         font-size: 16px;
         height: 44px;
     }
 
-    .choosing_resort_text_box > h3 {
+    .choosing_resort_text_box>h3 {
         font-size: 28px;
         margin-left: 18px;
     }
 
-    .choosing_resort_text_box > p {
+    .choosing_resort_text_box>p {
         font-size: 16px;
         margin-left: 18px;
         line-height: 24px;
@@ -350,13 +434,13 @@ body {
         gap: 12px;
     }
 
-    .moments_1 > p,
-    .moments_2 > p {
+    .moments_1>p,
+    .moments_2>p {
         font-size: 16px;
         width: 96%;
     }
 
-    .travel_companion_text > p {
+    .travel_companion_text>p {
         margin: 8px 16px;
         font-size: 15px;
     }
@@ -396,7 +480,7 @@ body {
         margin-top: 80px;
     }
 
-    .introduction_top_text > p {
+    .introduction_top_text>p {
         font-size: 14px;
     }
 
@@ -409,11 +493,11 @@ body {
         height: 220px;
     }
 
-    .visited_box_text > h2 {
+    .visited_box_text>h2 {
         font-size: 20px;
     }
 
-    .visited_box_text > p {
+    .visited_box_text>p {
         font-size: 13px;
     }
 
@@ -445,7 +529,7 @@ body {
         height: auto;
     }
 
-    .q_a_input > input {
+    .q_a_input>input {
         width: 100%;
     }
 
@@ -454,8 +538,373 @@ body {
         gap: 8px;
     }
 
-    .review_text_box > h2 {
+    .review_text_box>h2 {
         font-size: 28px;
         margin-left: 10px;
     }
 }
+
+/* Q&A 섹션 반응형 미디어쿼리 */
+/* @media (max-width: 1400px) {
+    .q_a_text_box {
+        width: 90%;
+        max-width: 970px;
+    }
+
+    .q_a_input {
+        width: 90%;
+        max-width: 1050px;
+    }
+
+    .liquidGlass-wrapper {
+        max-width: 580px;
+        padding: 22px 30px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .q_a_top_text {
+        gap: 40px;
+        margin-bottom: 25px;
+    }
+
+    .q_a_top_text > h2 {
+        font-size: 52px;
+    }
+
+    .q_a_top_text > p {
+        font-size: 26px;
+    }
+
+    .q_a_text_box {
+        width: 92%;
+        max-width: 920px;
+        height: 520px;
+        padding: 30px;
+    }
+
+    .liquidGlass-wrapper {
+        max-width: 520px;
+        padding: 20px 28px;
+    }
+
+    .liquidGlass-text {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .q_a_input {
+        width: 92%;
+        max-width: 920px;
+        height: 48px;
+    }
+
+    .q_a_input > input {
+        width: calc(100% - 60px);
+        font-size: 15px;
+    }
+
+    .q_a_input > button img {
+        width: 28px;
+        height: 28px;
+    }
+}
+
+@media (max-width: 900px) {
+    .q_a_top_text {
+        gap: 30px;
+    }
+
+    .q_a_top_text > h2 {
+        font-size: 46px;
+    }
+
+    .q_a_top_text > p {
+        font-size: 22px;
+    }
+
+    .q_a_text_box {
+        width: 94%;
+        height: 480px;
+        padding: 25px;
+    }
+
+    .liquidGlass-wrapper {
+        max-width: 460px;
+        padding: 18px 25px;
+    }
+
+    .liquidGlass-text {
+        font-size: 17px;
+        line-height: 26px;
+    }
+}
+
+@media (max-width: 780px) {
+    .q_a_top_text {
+        gap: 20px;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    .q_a_top_text > h2 {
+        font-size: 40px;
+    }
+
+    .q_a_top_text > p {
+        font-size: 20px;
+        text-align: center;
+        padding: 0 15px;
+    }
+
+    .q_a_text_box {
+        width: 95%;
+        max-width: 720px;
+        height: 450px;
+        padding: 20px;
+        border-radius: 20px;
+    }
+
+    .q_a_text_box::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    .liquidGlass-wrapper {
+        max-width: 100%;
+        width: 100%;
+        padding: 16px 22px;
+        margin: 20px 0;
+        border-radius: 20px;
+    }
+
+    .liquidGlass-text {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .q_a_input {
+        width: 95%;
+        max-width: 720px;
+        height: 46px;
+        padding: 8px 12px;
+    }
+
+    .q_a_input > input {
+        font-size: 14px;
+    }
+
+    .q_a_input > input::placeholder {
+        font-size: 14px;
+    }
+
+    .q_a_input > button img {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+@media (max-width: 580px) {
+    .q_a_top_text {
+        gap: 15px;
+        margin-bottom: 18px;
+    }
+
+    .q_a_top_text > h2 {
+        font-size: 34px;
+    }
+
+    .q_a_top_text > p {
+        font-size: 18px;
+    }
+
+    .q_a_text_box {
+        width: 96%;
+        height: 400px;
+        padding: 18px;
+        border-radius: 18px;
+    }
+
+    .q_a_text_box::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    .liquidGlass-wrapper {
+        padding: 14px 18px;
+        margin: 16px 0;
+        border-radius: 18px;
+    }
+
+    .liquidGlass-text {
+        font-size: 15px;
+        line-height: 22px;
+    }
+
+    .q_a_input {
+        width: 96%;
+        height: 44px;
+        padding: 6px 10px;
+        border-radius: 12px;
+    }
+
+    .q_a_input > input {
+        font-size: 13px;
+    }
+
+    .q_a_input > input::placeholder {
+        font-size: 13px;
+    }
+
+    .q_a_input > button img {
+        width: 22px;
+        height: 22px;
+    }
+}
+
+@media (max-width: 420px) {
+    .q_a_top_text {
+        gap: 12px;
+        margin-bottom: 15px;
+    }
+
+    .q_a_top_text > h2 {
+        font-size: 30px;
+    }
+
+    .q_a_top_text > p {
+        font-size: 16px;
+        padding: 0 10px;
+    }
+
+    .q_a_text_box {
+        width: 94%;
+        height: 360px;
+        padding: 15px;
+        border-radius: 16px;
+        border: 1.2px solid #8F8F8F;
+    }
+
+    .q_a_text_box::-webkit-scrollbar {
+        width: 6px;
+    }
+
+    .q_a_text_box::-webkit-scrollbar-track {
+        border-radius: 10px;
+    }
+
+    .q_a_text_box::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+    }
+
+    .liquidGlass-wrapper {
+        padding: 12px 16px;
+        margin: 14px 0;
+        border-radius: 16px;
+    }
+
+    .liquidGlass-text {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .q_a_text_box .liquidGlass-wrapper:nth-child(odd) {
+        border-radius: 20px;
+    }
+
+    .q_a_text_box .liquidGlass-wrapper:nth-child(even) {
+        border-radius: 100px;
+    }
+
+    .q_a_input {
+        width: 94%;
+        height: 42px;
+        padding: 5px 8px;
+        border-radius: 10px;
+    }
+
+    .q_a_input > input {
+        font-size: 12px;
+        width: calc(100% - 50px);
+    }
+
+    .q_a_input > input::placeholder {
+        font-size: 12px;
+    }
+
+    .q_a_input > button img {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+@media (max-width: 360px) {
+    .q_a_top_text {
+        gap: 10px;
+        margin-bottom: 12px;
+    }
+
+    .q_a_top_text > h2 {
+        font-size: 26px;
+    }
+
+    .q_a_top_text > p {
+        font-size: 14px;
+        padding: 0 8px;
+        line-height: 1.4;
+    }
+
+    .q_a_text_box {
+        width: 92%;
+        height: 320px;
+        padding: 12px;
+        border-radius: 14px;
+        border: 1px solid #8F8F8F;
+    }
+
+    .q_a_text_box::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    .liquidGlass-wrapper {
+        padding: 10px 14px;
+        margin: 12px 0;
+        border-radius: 14px;
+    }
+
+    .liquidGlass-text {
+        font-size: 13px;
+        line-height: 18px;
+    }
+
+    .q_a_text_box .liquidGlass-wrapper:nth-child(odd) {
+        border-radius: 18px;
+    }
+
+    .q_a_text_box .liquidGlass-wrapper:nth-child(even) {
+        border-radius: 80px;
+    }
+
+    .q_a_input {
+        width: 92%;
+        height: 40px;
+        padding: 4px 8px;
+        border-radius: 10px;
+    }
+
+    .q_a_input > input {
+        font-size: 11px;
+        width: calc(100% - 45px);
+    }
+
+    .q_a_input > input::placeholder {
+        font-size: 11px;
+    }
+
+    .q_a_input > button {
+        padding: 4px;
+    }
+
+    .q_a_input > button img {
+        width: 18px;
+        height: 18px;
+    }
+} */
