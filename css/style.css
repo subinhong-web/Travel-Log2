@@ -443,7 +443,6 @@ iframe {
 
 .travel_companion_text_box {
     display: flex;
-    /* gap: 35px; */
     margin: 0 0 0 130px;
     padding: 50px 0 0 0;
 }
