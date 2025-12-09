@@ -112,7 +112,6 @@ body {
         width: 650px;
         height: 200px;
         margin-top: 45px;
-        background-color: aquamarine;
     }
 
     .choosing_resort_text_box > h3 {
@@ -178,10 +177,67 @@ body {
     /* moments 끝 */
 
     /* travel_companion 시작 */
+
+    .travel_companion_text_box > h2 {
+        font-size: 30px;
+    }
+
+    .travel_companion_text > p {
+        font-size: 18px;
+    }
+
+    .travel_companion_text_box > button {
+        width: 170px;
+        height: 50px;
+    }
+
+    .travel_companion_box_1,
+    .travel_companion_box_2 {
+        width: 480px;
+        height: 600px;
+    }
+
+    .companion_text_box_2 > h3 {
+        font-size: 16px;
+    }
+
+    .companion_text_box_2 > p {
+        font-size: 20px;
+    }
+
     /* travel_companion 끝 */
+
+    /* q&a 시작 */
+
+    .q_a_top_text > h2 {
+        font-size: 48px;
+    }
+
+    .q_a_top_text > p {
+        font-size: 28px;
+    }
+
+    .q_a_text_box {
+        width: 900px;
+        height: 500px;
+    }
+
+    /* q&a 끝 */
+
+    /* common_sense 시작 */
+
+    .review_text_box > h2 {
+        font-size: 48px;
+    }
+
+    .review_text_box > p {
+        font-size: 20px;
+    }
+
+    /* common_sense 끝 */
 }
 
-@media (max-width: 1024px) {
+/* @media (max-width: 1024px) {
     .main_text {
         font-size: 42px;
         margin-top: 180px;
@@ -612,9 +668,8 @@ body {
         font-size: 28px;
         margin-left: 10px;
     }
-}
+} */
 
-/* Q&A 섹션 반응형 미디어쿼리 */
 /* @media (max-width: 1400px) {
     .q_a_text_box {
         width: 90%;

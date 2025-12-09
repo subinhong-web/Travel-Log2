@@ -74,7 +74,6 @@ body {
 .side_text a {
     text-decoration: none;
     color: #C0D9E5;
-    /* 그냥 하얀색,,,아니면 하늘색,,, */
     font-family: 'ChosunIlboMyungjo';
 }
 
@@ -386,7 +385,6 @@ iframe {
     font-size: 32px;
     margin: 15px 0 30px 0;
     font-family: 'ChosunIlboMyungjo';
-    /* font-weight: 800; */
 }
 
 .moments_1 {
@@ -476,7 +474,6 @@ iframe {
 .travel_companion_text > p {
     font-size: 20px;
     font-family: 'ChosunIlboMyungjo';
-    /* font-weight: 800; */
     color: #fff;
     margin: 10px 130px;
 }
@@ -593,13 +590,11 @@ iframe {
 .q_a_top_text > p {
     font-size: 32px;
     font-family: 'ChosunIlboMyungjo';
-    /* font-weight: 800; */
 }
 
 .q_a_text_box {
     width: 1070px;
     height: 570px;
-    /* background: rgba(255, 255, 255, 0.3); */
     border: 1.5px solid#fff;
     border-radius: 25px;
     overflow: hidden;
@@ -678,7 +673,6 @@ iframe {
     flex-direction: column;
     color: #fff;
     text-align: center;
-    /* transform: translateY(50%); */
 }
 
 .common_sense_box_1 {
