@@ -7,10 +7,10 @@ picture {
     display: block;
 }
 
-html,
+/* html,
 body {
     overflow-x: hidden;
-}
+} */
 
 /* choosing_resort 1700에서부터 컨텐츠 작아지기 */
 /* 그 외 컨텐츠들 1400에서부터 작아지기 */

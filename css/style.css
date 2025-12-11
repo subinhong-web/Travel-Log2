@@ -59,7 +59,7 @@ body {
 }
 
 /* 슬라이드 메뉴 시작 */
-.side_menu {
+/* .side_menu {
     position: relative;
 }
 
@@ -69,15 +69,15 @@ body {
     right: 100px;
     top: 50%;
     transform: translateY(-50%);
-}
+} */
 
-.side_text a {
+.menu_item a {
     text-decoration: none;
     color: #C0D9E5;
     font-family: 'ChosunIlboMyungjo';
 }
 
-.side_text > li {
+.menu_item {
     text-align: end;
     margin: 20px 0;
 }
@@ -168,21 +168,36 @@ header {
     font-size: 32px;
     font-family: 'ChosunIlboMyungjo';
     font-weight: 700;
-    display: flex;
     margin: 0 auto;
+    text-align: center;
+    transform: translateX(20%);
 }
 
 .introduction_main_text {
     color: #fff;
     font-size: 36px;
     line-height: 90px;
-    display: flex;
     justify-content: center;
     text-align: center;
     font-family: 'ChosunIlboMyungjo';
     font-weight: 800;
     margin-top: 145px;
+    transform: translateY(150px);
 }
+
+/* introduction 문장 애니메이션 */
+.introduction_main_text span {
+    display: block;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.7s ease-out;
+}
+
+.introduction_main_text span.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 /* introduction 끝 */
 
 /* visited_section 시작 */
@@ -218,7 +233,7 @@ iframe {
 .visited_text > p {
     font-size: 24px;
     font-family: 'ChosunIlboMyungjo';
-    margin-top: 15px;
+    margin: 15px 0 20px 0;
 }
 
 .visited_box {
@@ -668,11 +683,10 @@ iframe {
 
 .common_sense > h2 {
     font-size: 128px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+    font-family: "Nanum Myeongjo", serif;
     color: #fff;
     text-align: center;
+    transform: translateY(250%);
 }
 
 .common_sense_box_1 {
@@ -683,7 +697,7 @@ iframe {
 .common_sense_box_1 > p {
     width: 650px;
     height: 400px;
-    background: rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
     border-radius: 30px;
     display: flex;
@@ -694,9 +708,20 @@ iframe {
     align-items: center;
 }
 
+.common_sense_box_1 > figure {
+    transform: translate(-140%, -10%);
+}
+
+.common_sense_box_1 > p {
+    transform: translate(30%, 2%);
+}
+
 .common_sense_box_2 {
     display: flex;
-    position: absolute;
+}
+
+.common_sense_box_2 > p {
+    transform: translate(154%, 80%);
 }
 
 .common_sense_box_2 > figure {
@@ -706,7 +731,7 @@ iframe {
 .common_sense_box_2 > p {
     width: 650px;
     height: 400px;
-    background: rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
     border-radius: 30px;
     font-size: 24px;

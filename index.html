@@ -8,63 +8,66 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/media.css">
+    <link rel="stylesheet" href="./css/fullpage.css">
     <link rel="stylesheet" href="./css/glass.css">
+    <link rel="stylesheet" href="./css/fadeintext.css">
 </head>
 
 <body>
     <!-- 매 페이지에 붙어있는 side_menu -->
-    <div class="side_menu">
-        <ul class="side_text">
-            <li>
-                <a href="#">
-                    MAIN
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    INTRODUCTION
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    VISTED PLACES
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    CHOOSING
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    MOMENTS
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    TRAVEL COMPANION
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    Q & A
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    COMMON SENSE
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    REVIEW
-                </a>
-            </li>
-        </ul>
-    </div>
+    <!-- <div class="side_menu"> -->
+    <ul class="menu" id="menu">
+        <li class="menu_item" data-index="0">
+            <a href="#">
+                MAIN
+            </a>
+        </li>
+        <li class="menu_item" data-index="1">
+            <a href="#">
+                INTRODUCTION
+            </a>
+        </li>
+        <li class="menu_item" data-index="2">
+            <a href="#">
+                VISTED PLACES
+            </a>
+        </li>
+        <li class="menu_item" data-index="3">
+            <a href="#">
+                CHOOSING
+            </a>
+        </li>
+        <li class="menu_item" data-index="4">
+            <a href="#">
+                MOMENTS
+            </a>
+        </li>
+        <li class="menu_item" data-index="5">
+            <a href="#">
+                TRAVEL COMPANION
+            </a>
+        </li>
+        <li class="menu_item" data-index="6">
+            <a href="#">
+                Q & A
+            </a>
+        </li>
+        <li class="menu_item" data-index="7">
+            <a href="#">
+                COMMON SENSE
+            </a>
+        </li>
+        <li class="menu_item" data-index="8">
+            <a href="#">
+                REVIEW
+            </a>
+        </li>
+    </ul>
+    <!-- </div> -->
 
 
-    <section class="main_section">
+    <!-- <div id="fullpage"> -->
+    <section class="main_section section">
         <header>
             <h1>
                 <img src="./img/logo.png" alt="logo">
@@ -85,8 +88,7 @@
         </button>
     </section>
 
-
-    <section class="introduction">
+    <section class="introduction section">
         <div class="introduction_top_text">
             <h2>
                 TRAVEL NOTE
@@ -97,21 +99,25 @@
         </div>
 
         <div class="introduction_main_text">
-            <p>
+            <p class="content fade to_top">
                 A space connecting the world through my stories.
-                <br>
+            </p>
+            <p class="content fade to_top delay">
                 I believe travel doesn't end when you return,
-                <br>
+            </p>
+            <p class="content fade to_top delay">
                 but is only truly complete when you revisit it through your records.
-                <br>
+            </p>
+            <p class="content fade to_top delay">
                 A place where every journey in the world connects as one story —
-                <br>
+            </p>
+            <p class="content fade to_top delay">
                 This is the beginning of the travel record platform we created.
             </p>
         </div>
     </section>
 
-    <section class="visited_section">
+    <section class="visited_section section">
         <div class="visited_text">
             <h2>
                 visited Places
@@ -124,7 +130,10 @@
         <div class="visited_box">
             <!-- 반투명 박스 및 이미지 요소 -->
             <!-- <img src="./img/map_img.png" alt="map" class="visited_box_map"> -->
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6150187.815012933!2d7.417411747253551!3d41.17770057261617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12d4fe82448dd203%3A0xe22cf55c24635e6f!2z7J207YOI66as7JWE!5e0!3m2!1sko!2skr!4v1764828230011!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6150187.815012933!2d7.417411747253551!3d41.17770057261617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12d4fe82448dd203%3A0xe22cf55c24635e6f!2z7J207YOI66as7JWE!5e0!3m2!1sko!2skr!4v1764828230011!5m2!1sko!2skr"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
             <div class="visited_box_text">
                 <figure>
                     <img src="./img/visited_air.png" alt="airplane" class="visited_box_airplane">
@@ -147,7 +156,7 @@
         </div>
     </section>
 
-    <section class="choosing_resort">
+    <section class="choosing_resort section">
         <div class="choosing_resort_text">
             <h2>
                 Choosing a Resort
@@ -195,7 +204,7 @@
         </div>
     </section>
 
-    <section class="moments">
+    <section class="moments section">
         <div class="moments_text">
             <h2>
                 Moments Transformed by Travel
@@ -231,7 +240,7 @@
 
     </section>
 
-    <section class="travel_companion">
+    <section class="travel_companion section">
         <div class="travel_companion_text">
             <div class="travel_companion_text_box">
                 <h2>
@@ -297,7 +306,7 @@
 
     </section>
 
-    <section class="q_a">
+    <section class="q_a section">
         <div class="q_a_top_text">
             <h2>
                 Q & A
@@ -437,7 +446,43 @@
 
     </section>
 
-    <section class="review">
+    <section class="common_sense section">
+        <div class="common_sense">
+            <h2>
+                Common sense
+            </h2>
+
+            <div class="common_sense_box_1">
+                <p>
+                    Statue donated by France
+                    <br>
+                    to commemorate the 100th anniversary
+                    <br>
+                    of American independence
+                </p>
+                <figure>
+                    <img src="./img/Common sense_1.png" alt="common_sense_img_1">
+                </figure>
+            </div>
+
+            <div class="common_sense_box_2">
+                <p>
+                    The massive iron tower constructed
+                    <br>
+                    under the leadership of
+                    <br>
+                    French architect Alexandre Gustave Eiffel
+                </p>
+                <figure>
+                    <img src="./img/Common sense_2.png" alt="common_sense_img_2">
+                </figure>
+            </div>
+        </div>
+
+
+    </section>
+
+    <section class="review section">
         <div class="review_text_box">
             <h2>
                 REVIEW
@@ -610,7 +655,6 @@
 
         </div>
     </section>
-
     <script src="./js/script.js"></script>
 </body>
 
