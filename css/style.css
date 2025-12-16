@@ -741,6 +741,42 @@ iframe {
     text-align: center;
     align-items: center;
 }
+
+.common_sense_box_1,
+.common_sense_box_2 {
+    --mx: 0px;
+    --my: 0px;
+    transition: transform 0.15s ease-out;
+}
+
+.common_sense_box_1 > p {
+    transform: translate(
+        calc(30% + var(--mx)),
+        calc(2% + var(--my))
+    );
+}
+
+.common_sense_box_1 > figure {
+    transform: translate(
+        calc(-140% + var(--mx)),
+        calc(-10% + var(--my))
+    );
+}
+
+.common_sense_box_2 > p {
+    transform: translate(
+        calc(154% + var(--mx)),
+        calc(80% + var(--my))
+    );
+}
+
+.common_sense_box_2 > figure {
+    transform: translate(
+        calc(150% + var(--mx)),
+        calc(50% + var(--my))
+    );
+}
+
 /* common_sense 끝 */
 
 /* review 시작 */
@@ -778,6 +814,7 @@ iframe {
     display: flex;
     justify-content: center;
     gap: 20px;
+    /* width: max-content; */
 }
 
 .review_slide {
@@ -786,6 +823,20 @@ iframe {
     border-radius: 25px;
     padding: 32px 56px;
     align-items: center;
+}
+
+.roll {
+    animation: roll 20s infinite linear;
+}
+
+@keyframes roll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
 }
 
 .review_box_text {
